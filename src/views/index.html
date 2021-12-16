@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"> 
+    
+    <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+
+    <script src="../../node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="../../node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
+    <script src="../../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    
+    <title>Hello World!</title>
+  </head>
+  <body>  
+    <div class="contenedor">
+      <div class="d-flex"> 
+        <div class="column1 pr-1" id="columna1">
+          <img src="../images/logo.png" alt="">
+          <h2 class="text-center">Sistema de generacion y control de señales automotrices</h2>
+          <div class="d-flex justify-content-center puertos mt-5">
+            <div class="dropdown">
+              <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="fab fa-usb"></i> PUERTOS
+              </button>
+              <ul class="dropdown-menu" id="dropdown-ports" aria-labelledby="dropdownMenuButton1">                
+              </ul>
+            </div>
+            <button class="btn btn-refresh" id="btn-refresh" type="button">
+              <i class="fas fa-sync"></i>
+            </button>
+          </div>
+          <div class="d-flex justify-content-between buttons">
+            <button class="btn btn-info" type="button">
+              <i class="fas fa-question-circle"></i>Ayuda
+            </button>
+            <button class="btn btn-info" id="btn-connection" type="button" onclick="portConnection()">
+              <i class="fas fa-upload"></i>Conexion
+            </button>
+            <button class="btn btn-info d-none" id="btn-desconnection" type="button" onclick="portDesconnection()">
+              <i class="fas fa-upload"></i>Desconectar
+            </button>
+          </div>
+        </div>
+        <div class="column2 ">        
+          <div class="d-flex flex-column align-items-center">
+            <h1>Sistema</h1>
+            <h1>GSA</h1>
+            <img src="../images/grafica.png" alt="">            
+          </div>                   
+        </div>
+      </div>
+    </div>
+
+  <script src="../js/renderer.js"></script>
+  </body>
+</html>

@@ -1,0 +1,21 @@
+/* Importa los archivos de los componentes */
+@import url("components/button.css");
+
+body {
+    background-color: #261E35;
+    color: white;
+}
+
+.contenedor {
+    margin-left: 10px;    
+}
+
+#columna1 {
+      border-right:2px solid white;
+      height: 100vh;
+      width: 50vh;
+      padding-right: 5px;
+} 
+.column2 {
+    margin-left: 10%;
+}

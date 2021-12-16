@@ -1,0 +1,25 @@
+.buttons {
+    margin-top: 45vh;
+}
+.btn {
+    color: white;
+}
+
+.btn-info {
+    background-color: #B285EF;        
+    border: solid 1px #B285EF;
+}
+
+.fas{
+    margin-right: 5px;
+}
+.btn-refresh {
+    margin-left: 5px;
+    border-radius: 50%;
+}
+.btn-refresh i {
+    padding-left: 5px;
+}
+.btn-refresh:hover {
+    color: yellowgreen;
+}
